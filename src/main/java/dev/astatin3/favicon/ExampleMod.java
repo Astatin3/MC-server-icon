@@ -122,10 +122,7 @@ public class ExampleMod implements ModInitializer {
                     throw new RuntimeException(e);
                 }
 
-                context.getSource().sendFeedback(() -> Text.literal("Done!"), false);
-
-                context.getSource().sendFeedback(() -> Text.literal("Current icon: " + server.getServerMetadata().favicon().get().iconBytes().length + " bytes"), false);
-
+                context.getSource().sendFeedback(() -> Text.literal("Done!"), false);2
 
                 return 1;
             })));
