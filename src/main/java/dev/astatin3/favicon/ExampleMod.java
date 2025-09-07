@@ -122,7 +122,7 @@ public class ExampleMod implements ModInitializer {
                     throw new RuntimeException(e);
                 }
 
-                context.getSource().sendFeedback(() -> Text.literal("Done!"), false);2
+                context.getSource().sendFeedback(() -> Text.literal("Done!"), false);
 
                 return 1;
             })));
