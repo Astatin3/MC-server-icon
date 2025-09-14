@@ -84,14 +84,14 @@ public class ExampleMod implements ModInitializer {
                 context.getSource().sendFeedback(() -> Text.literal("Encoding icon data..."), false);
 
 
-                for (int y = 0; y < 64; y++) {
-                    String text = "";
-                    for (int x = 0; x < 64; x++) {
-                        text += mapState.colors[y * 128 + x] + ", ";
-                    }
-                    String finalText = text;
-                    context.getSource().sendFeedback(() -> Text.literal(finalText), false);
-                }
+//                for (int y = 0; y < 64; y++) {
+//                    String text = "";
+//                    for (int x = 0; x < 64; x++) {
+//                        text += mapState.colors[y * 128 + x] + ", ";
+//                    }
+//                    String finalText = text;
+//                    context.getSource().sendFeedback(() -> Text.literal(finalText), false);
+//                }
 
                 BufferedImage bufImg = convertImage(mapState.colors);
                 byte[] favicon = toBytes(bufImg);
